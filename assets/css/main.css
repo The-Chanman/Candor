@@ -3383,14 +3383,14 @@
     	margin: auto;
 	}
 		#first {
-			width: 50%;
+			width: 40%;
 	    	float: left;
 	    	height: 60%;
 	    	border-top: 2px solid;
 		}
 
 		#second {
-	    	width: 50%;
+	    	width: 60%;
 	    	float: left;
 	    	height: 60%;
 	    	border-left: 2px solid;
