@@ -3373,6 +3373,31 @@
 				opacity: 0;
 			}
 
+/* Container */
+	.container {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	    width: 100%;
+    	margin: auto;
+	}
+		#first {
+			width: 50%;
+	    	float: left;
+	    	height: 60%;
+	    	border-top: 2px solid;
+		}
+
+		#second {
+	    	width: 50%;
+	    	float: left;
+	    	height: 60%;
+	    	border-left: 2px solid;
+	    	border-top: 2px solid;
+		}
+
+
 /* Banner */
 
 	#banner {
@@ -3411,6 +3436,7 @@
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+
 		}
 
 			#banner h2:before, #banner h2:after {
