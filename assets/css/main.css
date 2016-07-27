@@ -3381,17 +3381,18 @@
 		display: flex;
 	    width: 100%;
     	margin: auto;
+    	
 	}
 		#first {
 			width: 50%;
-	    	float: left;
+			display: inline-block;
 	    	height: 60%;
 	    	border-top: 2px solid;
 		}
 
 		#second {
 	    	width: 50%;
-	    	float: left;
+	    	display: inline-block;
 	    	height: 60%;
 	    	border-left: 2px solid;
 	    	border-top: 2px solid;
