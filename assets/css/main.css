@@ -3383,7 +3383,7 @@
     	margin: auto;
     	
 	}
-		#first {
+		.first {
 
 			width: 33%;
 			display: inline-block;
@@ -3391,7 +3391,7 @@
 	    	border-top: 2px solid;
 		}
 
-		#second {
+		.second {
 
 	    	width: 67%;
 	    	display: inline-block;
