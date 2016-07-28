@@ -3387,7 +3387,7 @@
 
 			width: 50%;
 			display: inline-block;
-	    	height: 60%;
+	    	height: 100%;
 	    	border-top: 2px solid;
 		}
 
@@ -3395,7 +3395,7 @@
 
 	    	width: 50%;
 	    	display: inline-block;
-	    	height: 60%;
+	    	height: 100%;
 	    	border-left: 2px solid;
 	    	border-top: 2px solid;
 		}
