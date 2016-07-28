@@ -9,6 +9,82 @@
 		<link href="assets/css/3-col-portfolio.css" rel="stylesheet">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			    $('.perspective-card-1').click(function() {
+					$('.full-perspective-1').hide();
+					$('.full-perspective-2').hide();
+					$('.full-perspective-3').hide();
+					$('.full-perspective-4').hide();
+				});
+			});
+			
+
+			$(document).ready(function() {
+			    $('.perspective-card-1').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-1').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-1').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-1').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			$(document).ready(function() {
+			    $('.perspective-card-2').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-2').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-2').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-2').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			$(document).ready(function() {
+			    $('.perspective-card-3').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-3').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-3').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-3').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			$(document).ready(function() {
+			    $('.perspective-card-4').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-4').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-4').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-4').hide();
+						$('.all-perspectives').show();
+					});
+			});
+		</script>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -127,56 +203,72 @@
 					</div>
 				</div>
 				<div class="second">
-					<h2> Perspectives </h2>
-					<div class="zoomed-in-perspectives">
-						<ul>
-				            <li style="display:block;" onclick="document.getElementByClass('fullarticle').style.visibility='hidden'" onclick="document.getElementById('article1').style.visibility='visible'">ARTICLE 1</li>
-				            <li style="display:block;" onclick="document.getElementByClass('fullarticle').style.visibility='hidden'" onclick="document.getElementById('article2').style.visibility='visible'">ARTICLE 2</li>
-				            <li style="display:block;" onclick="document.getElementByClass('fullarticle').style.visibility='hidden'" onclick="document.getElementById('article3').style.visibility='visible'">ARTICLE 3</li>
-				            <li style="display:block;" onclick="document.getElementByClass('fullarticle').style.visibility='hidden'" onclick="document.getElementById('article4').style.visibility='visible'">ARTICLE 4</li>
-				        </ul>
-					<div class="row1">
-			            <div class="col-md-6 portfolio-item">
-							<img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
-			                <h3> Richie </h3>
-			                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
-			            </div>
-			            <div class="col-md-6 portfolio-item">
-			                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
-			                <h3> Richie </h3>
-			                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
-			            </div>
-			        </div>
-			        <div class="row2">
-			            <div class="col-md-6 portfolio-item">
-			                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
-			                <h3> Richie </h3>
-			                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
-			            </div>
-			            <div class="col-md-6 portfolio-item">
-			                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
-			                <h3> Richie </h3>
-			                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
-			            </div>
-			        </div>
-   				
+					<div class="all-perspectives">
+						<h2> Perspectives </h2>
+						<div class="row1">
+				            <div class="col-md-6 portfolio-item perspective-card-1">
+								<img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
+				                <h3> Richie </h3>
+				                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+				            </div>
+				            <div class="col-md-6 portfolio-item perspective-card-2">
+				                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
+				                <h3> Richie </h3>
+				                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+				            </div>
+				        </div>
+				        <div class="row2">
+				            <div class="col-md-6 portfolio-item perspective-card-3">
+				                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
+				                <h3> Richie </h3>
+				                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+				            </div>
+				            <div class="col-md-6 portfolio-item perspective-card-4">
+				                <img class="img-responsive pull-left" src="images/richie.jpeg" alt="">
+				                <h3> Richie </h3>
+				                <p>Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="full-perspectives">
+					    <div class="full-perspective-1">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/richie.jpeg" alt="">
+					                <h3> Perspective 1 - Richie </h3>
+					                <p>Perspective 1 ... Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+					            </div>
+					    </div>
+					    <div class="full-perspective-2">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/richie.jpeg" alt="">
+					                <h3> Perspective 2 - Richie </h3>
+					                <p>Perspective 2 .... Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+					            </div>
+					    </div>
+					    <div class="full-perspective-3">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/richie.jpeg" alt="">
+					                <h3> Perspective 3 - Richie </h3>
+					                <p>Perspective 3 ... Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+					            </div>
+					    </div>
+					    <div class="full-perspective-4">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/richie.jpeg" alt="">
+					                <h3> Perspective 4 - Richie </h3>
+					                <p>Perspective 4 ... Here's a bunch of text. Richie has alot of opinions so here they are.  "Blah blah blah" he often says. He also thinks "jndajndj ad asd as sad sad ads as sdkjfsf fds dfs fds dfs fds dfs fds sdf fds fds fds"</p>
+					            </div>
+					    </div>
+					</div>
+				</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script src="assets/js/bootstrap.min.js"></script>
-			<script>
-			$('#page-wrapper .our_lower_divs .second .row1').click(function() {
-		    var i = $(this).index();
-		    $('.fullarticle').hide();
-		    $('#article' + (i+1)).show();
-		    </script>
-});
-		  	
+			
+			<script src="assets/js/bootstrap.min.js"></script>		  	
 	</body>
 </html>
