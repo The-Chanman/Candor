@@ -3399,7 +3399,17 @@
 	    	height: 100%;
 	    	border-left: 2px solid;
 	    	border-top: 2px solid;
+	    	padding-left: 30px;
 		}
+
+	.perspective_row {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	    width: 100%;
+    	margin: auto;
+	}
 
 /* Banner */
 
@@ -3841,3 +3851,6 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+
