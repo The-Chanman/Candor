@@ -3409,20 +3409,6 @@
 	    width: 100%;
     	margin: auto;
 	}
-			.card-border {
-		    	border-style: solid;
-    			border-width: medium;
-			}
-
-			.card2 {
-				width: 50%;
-				display: inline-block;
-		    	
-		    	border-top: 2px solid;
-			}
-
-
-
 
 /* Banner */
 
@@ -3457,7 +3443,7 @@
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 1.50em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
