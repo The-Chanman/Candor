@@ -3385,7 +3385,7 @@
 	}
 		#first {
 
-			width: 50%;
+			width: 33%;
 			display: inline-block;
 	    	height: 100%;
 	    	border-top: 2px solid;
@@ -3393,7 +3393,7 @@
 
 		#second {
 
-	    	width: 50%;
+	    	width: 67%;
 	    	display: inline-block;
 	    	height: 100%;
 	    	border-left: 2px solid;
