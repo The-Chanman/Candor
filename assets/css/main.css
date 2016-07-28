@@ -3411,6 +3411,44 @@
     	margin: auto;
 	}
 
+	/* Container */
+	.our_lower_divs2 {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	    width: 100%;
+    	margin: auto;
+    	overflow:hidden; 
+    	word-wrap:break-word;
+	}
+		#first2 {
+
+			width: 33%;
+			display: inline-block;
+	    	height: 100%;
+	    	border-top: 2px solid;
+		}
+
+		#second2 {
+
+	    	width: 67%;
+	    	display: inline-block;
+	    	height: 100%;
+	    	border-left: 2px solid;
+	    	border-top: 2px solid;
+	    	padding-left: 30px;
+		}
+
+	.perspective_row {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	    width: 100%;
+    	margin: auto;
+	}
+
 /* Banner */
 
 	#banner {
