@@ -3398,7 +3398,30 @@
 	    	height: 100%;
 	    	border-left: 2px solid;
 	    	border-top: 2px solid;
+	    	padding-left: 30px;
 		}
+
+	.perspective_row {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+	    width: 100%;
+    	margin: auto;
+	}
+			.card-border {
+		    	border-style: solid;
+    			border-width: medium;
+			}
+
+			.card2 {
+				width: 50%;
+				display: inline-block;
+		    	
+		    	border-top: 2px solid;
+			}
+
+
 
 
 /* Banner */
@@ -3841,3 +3864,6 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+
