@@ -1,185 +1,259 @@
-<!DOCTYPE HTML>
-<!--
-	Dynamo by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Care-fulllllllly</title>
+		<title>Candor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/3-col-portfolio.css" rel="stylesheet">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+					$('.full-perspective-1').hide();
+					$('.full-perspective-2').hide();
+					$('.full-perspective-3').hide();
+					$('.full-perspective-4').hide();
+			});
+			
+			// clicking for perspective 1
+			$(document).ready(function() {
+			    $('.perspective-card-1').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-1').show();
+				});
+			});
+
+			// going back from p1
+			$(document).ready(function() {
+				$('.full-perspective-1').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-1').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			//p2 
+			$(document).ready(function() {
+			    $('.perspective-card-2').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-2').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-2').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-2').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			// p3
+			$(document).ready(function() {
+			    $('.perspective-card-3').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-3').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-3').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-3').hide();
+						$('.all-perspectives').show();
+					});
+			});
+
+			//p4
+			$(document).ready(function() {
+			    $('.perspective-card-4').click(function() {
+					console.log("going to full perspective");
+					$('.all-perspectives').hide();
+					$('.full-perspective-4').show();
+				});
+			});
+
+			$(document).ready(function() {
+				$('.full-perspective-4').click(function() {
+						console.log("going back to all perspectives");
+						$('.full-perspective-4').hide();
+						$('.all-perspectives').show();
+					});
+			});
+		</script>
 	</head>
 	<body class="landing">
-
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Care-fully</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="#cta">Sign Up</a></li>
-											<!--
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Log In</a></li>
-										    -->
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Care-fully</h2>
-							<h3>Compassion Delivers</h3>
-							<p>Together we can</p>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<ul class="actions">
-								<li><a href="#cta" class="button special">Sign Up</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>I am one who: Cares     Needs Care<br />
-								There are so many events all over campus.</h2>
-								<p>Keep track of events and help orient yourself to acomplish <br />your longterm goals. See suggested activities or goals from people <br />with similar interests. Make the best use of the great opportunties <br />around you. Dynamo is a smart calendar that help your schedule <br />maintain a healthy balance while acomplishing your goal.</p>
-							</header>
-							<!--<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>-->
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/book .jpeg" alt="" /></div><div class="content">
-								<h2>A Smart Calendar<br />
-								for your schedule.</h2>
-								<p>No need to hassle every week scouring all the events and manually loading them all in.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Humanized Process<br />
-								to understand your needs.</h2>
-								<p>Dynamo understands your needs, goals, and preferences to help you create a balanced schedule based on events around you.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Prioritization<br />
-									of what you believe</h2>
-								<p>Dynamo understands you can't be everywhere so we make sure to understand what you truly care about gets the frontpage.</p>
-							</div>
-						</section>
-					</section>
-
-				<!-- Three -->
-				<!--
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-				-->
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Get started today.</h2>
-								<p>Make your calendar work for you, not the other way around.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Sign Up</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Dynamo</li>
-						</ul>
-					</footer>
-
+		<div id="page-wrapper">
+			<div style="background-color:black"> 
+					<img class="pull-left" src="images/F&P-White-Logo.png" height="60">
 			</div>
+			<div id="Timeline" onclick="document.getElementById('Timeline').style.height = '600';document.getElementById('Iframe').style.height = '600;">
+				<div style="background-color:white"> 
+					
+					<img src="images/the_mission_and_gentrification.png" height="120">
+				</div>
+				<!-- Timeline from https://timeline.knightlab.com/-->
+				<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1sidfB6shzmurpOXjUtsuZaYCx35tXJRhOsZsZYj3dPQ&font=Default&lang=en&hash_bookmark=true&initial_zoom=1&height=600' id="Iframe" width='100%' height='600' frameborder='0' scrolling="yes"></iframe>
+			</div>
+			<div class="our_lower_divs" style="overflow-y: scroll">
+				<div class="first">
+				<br>
+					<h2>Context</h2>
+					<div class="panel-group">
+					    <div class="panel panel-default">
+					      <div class="panel-heading">
+					        <h4 class="panel-title">
+					          <a data-toggle="collapse" href="#collapse2">What is gentrification?</a>
+					        </h4>
+					      </div>
+					      <div id="collapse2" class="panel-collapse collapse">
+					        <ul class="list-group">
+					          <li class="list-group-item">A trend in urban neighborhoods, which results in increased property values and the displacing of lower-income families and small businesses.</li>
+					          <li class="list-group-item">Cities are becoming more attractive than suburbs and this change is pushing out those who used to live inexpensively in cities</li>
+					        </ul>
+					        <div class="panel-footer"></div>
+					      </div>
+					    </div>
+					</div>
+					<div class="panel-group">
+					    <div class="panel panel-default">
+					      <div class="panel-heading">
+					        <h4 class="panel-title">
+					          <a data-toggle="collapse" href="#collapse1">Gentrification in the Mission</a>
+					        </h4>
+					      </div>
+					      <div id="collapse1" class="panel-collapse collapse">
+					        <ul class="list-group">
+					          <li class="list-group-item">For many years, the Mission has been the battleground for protests over evictions, tech shuttles, gentrification and the soaring cost of living.
+								</li>
+					          <li class="list-group-item">Yet in San Francisco's oldest neighborhood, the issues are more complicated than two sides of a sharply divided protest. The Mission's longtime residents are struggling to make businesses work, fighting to keep a foothold in their homes and coping with an unprecedented influx of wealth.</li>
+					        </ul>
+					        <div class="panel-footer"></div>
+					      </div>
+					    </div>
+					</div>
+					<div class="panel-group">
+					    <div class="panel panel-default">
+					      <div class="panel-heading">
+					        <h4 class="panel-title">
+					          <a data-toggle="collapse" href="#collapse3">Who is involved?</a>
+					        </h4>
+					      </div>
+					      <div id="collapse3" class="panel-collapse collapse">
+					        <ul class="list-group">
+					          <li class="list-group-item">The Mission started as a majority Latino neighborhood in SF.   </li>
+					          <li class="list-group-item">Techies who work in the city as well as further south in Mountain View and Palo Alto are flocking to Mission for its and location.</li>
+					        </ul>
+					        <div class="panel-footer"></div>
+					      </div>
+					    </div>
+					</div>
+				</div>
+				<div class="second">
+					<div class="all-perspectives">
+						<br>
+						<h2> Perspectives </h2>
+						<div class="row">
+				            <div class="col-md-6 portfolio-item perspective-card-1">
+								<img class="img-responsive pull-left" src="images/roberthernandez.png" alt="" height="150" width="150">
+				                <h3> Robert Hernandez </h3>
+				                <p>If you’ve never been to the Mission than you cannot begin to understand the attachment we have to it.  Let me clarif: visiting doesn’t count. People come for the Mexican food, the beautiful Dolores park, the views...and I love all that.  But you can’t understand the Mission until you connect with the people here.</p>
+				            </div>
+				            <div class="col-md-6 portfolio-item perspective-card-2">
+				                <img class="img-responsive pull-left" src="images/Kai.png" alt="" height="150" width="150">
+				                <h3> Kai </h3>
+				                <p>I was walking around the other day and saw some tourists on the Mission District Tour.  We didn’t have those when I was a kid.  We weren’t treated as a spectacle and abnormality for the world. </p>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="col-md-6 portfolio-item perspective-card-3">
+				                <img class="img-responsive pull-left" src="images/Jillian.png" alt="" height="150" width="150">
+				                <h3> Jillian Means</h3>
+				                <p>Cities are changing and I think people will have to change with them.  We can’t hold on to a traditional and “golden” past that doesn’t exist.  For me, living in the Mission allows me to be close to the Google headquarters while being close to my family in the city.  </p>
+				            </div>
+				            <div class="col-md-6 portfolio-item perspective-card-4">
+				                <img class="img-responsive pull-left" src="images/Will.png" alt="" height="150" width="150">
+				                <h3> Will Lerst </h3>
+				                <p>The Mission has potential to be the best neighborhood in San Francisco and I want to be there to document and feed it.  We’re not removing culture, we’re adding our own and are receiving a lot of hostility.</p>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="full-perspectives">
+					    <div class="full-perspective-1">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/roberthernandez.png" alt="" height="150" width="150">
+					                <h3> Robert Hernandez </h3>
+					                <h5>A poet, painter, lowrider and musician of Mayan and Nicaraguan descent who was born and raised in the only city he has called home, San Francisco.</h5>
+					                <br>
+					                <b>Mission & The People</b>
+					                <br>
+									<p>If you’ve never been to the Mission than you cannot begin to understand the attachment the people who live here have to it.  Let me clarify.  Visiting doesn’t count.  Spending a season here doesn’t count.  People come for the Mexican food, the beautiful Dolores park, the views...and I love all that.  But you can’t understand the Mission until you understand and connect with the people.  Play soccer against the 30+ men soccer “team” or go to a slam poetry event, that’s how you see the Mission.</p>
+									<img class="img-responsive" src="images/tortillas.jpg" alt="" > <br>
+									<b>Mission & Our Soul</b>
+									<p>
+									I keep hearing seeing my friends being evicted.  That word gets thrown around a lot so let me try to make you feel it.  
+									<br>
+									Imagine you’re vacationing abroad, waiting in the lobby of a hotel for a room you know you booked a while ago.  You’re getting frustrated.  Your family is there.  You sleep in the lobby overnight waiting for this guaranteed room.  The owners finally come out and tell you your room is no longer available.  Someone else paid more.  You’re kicked out on to the street.  Now imagine you can’t just book another place, you can’t just fly back to your home.  Your family has nowhere.
+									<br>
+									Now if that doesn’t help you see our situation, come down the The Mission and I’ll personally give you a tour. </p>
+									<img class="img-responsive" src="images/robertpush.jpg" alt="">
+
+					            </div>
+					    </div>
+					    <div class="full-perspective-2">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/Kai.png" alt="" height="150" width="150">
+					                <h3> Kai </h3>
+					                <h5>Local who shares the thoughts and values of the neighborhood and has been evicted twice because of rent inflations</h5>
+					                <br>
+					                <p>Space & Integration<br>
+									People are coming into the Mission and saying they are part of the community but don’t show it.  We have a community soccer field in the neighborhood that has always been open for everyone.  Permits didn’t exist.  A bunch of new tech workers were playing a game and would rather have played alone on their side of the field than join us.  We played two separate games on one field.  It still feels segregated at times.</p>
+									<p>Culture & Trends<br>
+									I was walking around the other day and saw the Mission District Tour.  We didn’t have those when I was a kid.  We weren’t treated as a spectacle and abnormality for the world. 
+									<br>
+									Across the street from my first home was a Latino bakery called Mi Rancho.  Everyone in the neighborhood came here but it has since been replaced by a hip salon.  </p>
+									<p>Home & Eviction <br>
+									I just remember being in my house and having to stay in my room while people were going through closets and rooms and checking everything out.  That’s when we were evicted. 
+									<br>
+									I’m not a unique story.  This is happening weekly. </p>
+					            </div>
+					    </div>
+					    <div class="full-perspective-3">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/Jillian.png" alt="" height="150" width="150">
+					                <h3> Jillian Means </h3>
+					                <h5>A blogger, designer, and human rights activist who loves the Mission</h5>
+					                <br>
+					                <p> Work & Home <br>
+					                For many people, the Mission is a perfect blend of work and community.  We're close to the bay and all the companies that are headquartered there but also in the best neighborhood in SF.  We are bringing money to the area and helping the local economy while bringing in a bit of our own culture.</p>
+					            </div>
+					    </div>
+					    <div class="full-perspective-4">
+						    	<div class="col-md-12 portfolio-item">
+					                <img class="img-responsive" src="images/Will.png" alt="" height="150" width="150">
+					                <h3> Will Lerst </h3>
+					                <h5> A Facebook programmer who loves to play pickup soccer and report on local news</h5>
+					                <br>
+					                <p>As a new member of the Mission community I hope to meet new people and make connections with a lot of the established businesses in this area.</p>
+					            </div>
+					    </div>
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/bootstrap.min.js"></script>		  	
 	</body>
 </html>
